@@ -140,6 +140,10 @@ section{
     grid-column: 3 / -2;
 }
 
+.div-grid1 ul{
+    grid-column: 2 / -1;
+    grid-row: 1 / span 2;
+}
 /*Section Grid Style - end*/
 
 /* Hero Style -start*/
@@ -249,6 +253,8 @@ section{
     list-style: none;
     align-items: center;
     margin: auto;
+    grid-row: 1 / 2;
+    justify-content: center;
 }
 
 .contact-grid li a{
