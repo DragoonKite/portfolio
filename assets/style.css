@@ -17,13 +17,14 @@ body{
 a:visited, a:link{
     text-decoration: none;
 }
-/*HEader Style -start*/
+/*Header Style -start*/
 header{
     padding: 25px 25px;
     background-color: var(--secondary-color);
     z-index: 9999;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -97,10 +98,6 @@ section{
     justify-content: space-between;
 }
 
-.section-grid-container section{
-    background-color: orange;
-}
-
 .hero{
     grid-row: 1 / span 2;
     grid-column: 1 / -1;
@@ -143,21 +140,6 @@ section{
     grid-column: 3 / -2;
 }
 
-.div-grid2{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.div-grid2 h2{
-    grid-row: 1 / -1;
-    border-color: black;
-    border-right: solid;
-    padding: 10px;
-}
 /*Section Grid Style - end*/
 
 /* Hero Style -start*/
@@ -177,6 +159,7 @@ section{
   grid-column: -1 / span 2; 
 }
 /*Hero Style - end*/
+
 /*About Me Style - start*/
 .about-me p:first-letter{
     color: var(--primary-color);
@@ -188,66 +171,70 @@ section{
 /*About Me Style -end*/
 
 /*Work Section Style - start*/
-.work-grid-container{
+.work-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    min-width: 980px;
-    min-height: 500px;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: space-between;
+    width: 100%;
+    grid-gap: 5px;
+}
+
+.work-grid h2{
+    align-self: center;
+    grid-row: 1 / -1;
+    border-color: black;
+    border-right: solid;
     padding: 10px;
-    grid-gap: 10px;
 }
 
-.work-grid-container h3,h4{
-    display: inline;
-    color: var(--primary-color);
-    background-color: rgba(5, 5, 10, 0.3);
-}
-
-.project1{
-    grid-row: 1 / span 6;
-    grid-column: 1 / span 6;
-    background-image: url(./images/hero-bg.jpg);
+.project{
     background-size: cover;
+}
+.project1{
+    grid-row: 1 / span 4;
+    grid-column: 3 / span 4;
+    background-image: url(./images/hero-bg.jpg);
 }
 
 .project2{
-    grid-row: 7 / -1;
-    grid-column: 1 / span 3;
+    grid-row: 5 / span 2;
+    grid-column: 3 / span 2;
     background-image: url(./images/RpyG.png);
-    background-size: cover;
 }
 
 .project3{
-    grid-row: 7 / -1;
-    grid-column: 4 / span 3;
+    grid-row: 5 / span 2;
+    grid-column: 5 / span 2;
     background-image: url(./images/axe-throwing.jpg);
-    background-size: cover;
 }
 
 .project4{
-    grid-row: 1 / span 3;
-    grid-column: 7 / -1;
+    grid-row: 1 / span 2;
+    grid-column: 7 / span 2;
     background-image: url(./images/bitcoin.jpg);
-    background-size: cover;
 }
 
 .project5{
-    grid-row: 4 / span 3;
-    grid-column: 7 / -1;
+    grid-row: 3 / span 2;
+    grid-column: 7 / span 2;
     background-image: url(./images/digital-marketing-meeting.jpg);
-    background-size: cover;
 }
+
+.project{
+
+
+}
+
+.subtitle{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.2);
+}
+
 
 /*Work Section Style - end*/
 
-div h2{
-    flex: 1 12%;
-}
-
-div p{
-    flex: 10;
-} 
 
 /*Contact Secton Style - end*/
 .contact-grid{
