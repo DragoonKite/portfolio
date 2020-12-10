@@ -85,7 +85,17 @@ section{
     border-color: var(--secondary-color);
 
 }
+/*About Me Style - start*/
+.about-me p:first-letter{
+    color: var(--primary-color);
+    font-family: fancy;
+    font-weight: 400;
+    font-size: x-large;
 
+}
+/*About Me Style -end*/
+
+/*Work Section Style - start*/
 .work-grid-container{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -136,6 +146,8 @@ section{
     background-size: cover;
 }
 
+/*Work Section Style - end*/
+
 div h2{
     flex: 1 12%;
 }
@@ -144,6 +156,7 @@ div p{
     flex: 10;
 } 
 
+/*Contact Secton Style - end*/
 .contact-grid{
     display:grid;
     grid-template-columns: repeat(20, 1fr);
@@ -173,4 +186,5 @@ div p{
 .item4{
     grid-column: 15 / span 2;
 }
+/*Contact Section Style-end*/
 /*Section Style-end*/
