@@ -101,23 +101,24 @@ section{
     background-color: orange;
 }
 
-.section1{
+.hero{
     grid-row: 1 / span 2;
     grid-column: 1 / -1;
     background-image: url(./images/hero-banner.jpg);
+    background-size: contain;
 }
 
-.section2{
+.about-me{
     grid-row: 3 / span 2;
     grid-column: 1 / -1;
 }
 
-.section3{
+.work{
     grid-row: 5 / span 5;
     grid-column: 1 / -1;
 }
 
-.section4{
+.contact{
     grid-row: 10 / span 2;
     grid-column: 1 / -1;
 }
@@ -135,6 +136,11 @@ section{
     border-color: black;
     border-right: solid;
     padding: 10px;
+}
+
+.div-grid1 p{
+    grid-row: 1 / span 2;
+    grid-column: 3 / -2;
 }
 
 .div-grid2{
@@ -155,16 +161,20 @@ section{
 /*Section Grid Style - end*/
 
 /* Hero Style -start*/
-.hero{
-    
+.hero-grid{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100%;
 }
 
-.hero h2{
+.hero-grid h2{
   font-weight: bold;
   font-size: 36px;
   color:var(--primary-color);
   margin: 0;
-  box-align: right;
+  grid-row: 2;
+  grid-column: -1 / span 2; 
 }
 /*Hero Style - end*/
 /*About Me Style - start*/
