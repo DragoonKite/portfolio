@@ -274,6 +274,17 @@ section{
 /*Contact Section Style-end*/
 /*Section Style-end*/
 
+/*Footer Style - start*/
+footer{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+}
+/*Footer Style - end*/
+
 /*Media Query Style - start*/
 @media screen and (max-width: 980px){
     header{
