@@ -295,6 +295,24 @@ footer{
         position: relative;
     }
 
+    .project4, .project5{
+        grid-column: 7 / span 3;
+    }
+
+
+}
+
+/*Style for Tablets*/
+@media screen and (max-width: 768px){
+    header{
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        font-size: x-large;
+    }
+    
     .work h2{
         border-bottom: solid;
         border-right: none;
@@ -311,19 +329,7 @@ footer{
         align-items: center;
         background-size: contain;
     }
-}
 
-/*Style for Tablets*/
-@media screen and (max-width: 768px){
-    header{
-        align-items: center;
-        justify-content: center;
-    }
-
-    header nav ul li a{
-        font-size: x-large;
-    }
-    
     .hero{
         height: 255px;
         background-size: cover;
