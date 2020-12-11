@@ -37,6 +37,11 @@ header h1{
     text-shadow: 0 0 10px rgba(5, 5, 10, 0.7);
 }
 
+header img{
+    border-radius: 50%;
+    height: 150px;
+}
+
 header nav{
     justify-content: space-between;
     flex-wrap: wrap;
@@ -307,6 +312,10 @@ footer{
     header{
         align-items: center;
         justify-content: center;
+    }
+
+    header img{
+        padding: 20px;
     }
 
     header nav ul li a{
