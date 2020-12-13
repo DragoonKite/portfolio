@@ -190,6 +190,8 @@ section{
 }
 
 .work-grid h2{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
     align-self: center;
     grid-row: 1 / -1;
     border-color: black;
@@ -199,7 +201,14 @@ section{
 
 .project{
     background-size: cover;
+    opacity: 0.8;
 }
+
+.project:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
 .project1{
     grid-row: 1 / span 4;
     grid-column: 3 / span 4;
@@ -233,7 +242,7 @@ section{
 .subtitle{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.75);
 }
 
 .subtitle a{
@@ -263,6 +272,16 @@ section{
 .contact-grid li a{
     text-shadow: 0 0 10px rgba(2, 5, 10, 0.2);
     color: var(--primary-color);
+}
+
+.contact-grid li:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.contact-grid li a:hover{
+    color: var(--secondary-color);
 }
 
 .item1{
@@ -323,6 +342,7 @@ footer{
     }
     
     .work h2{
+        writing-mode: horizontal-tb;
         border-bottom: solid;
         border-right: none;
     }
