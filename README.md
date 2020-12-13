@@ -17,7 +17,7 @@ One html file, an assets folder that contains an images folder and a CSS style s
 ![Screenshot](assets/images/portfolio-screencapture.png)
 
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DragoonKite/horiseon)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DragoonKite/portfolio)
 
 ## Contribution
 Made with ❤️ by DragoonKite
